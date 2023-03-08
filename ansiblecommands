@@ -29,29 +29,29 @@ CONTAINER ID   IMAGE     COMMAND       CREATED          STATUS          PORTS   
 fc7c04f7dcb2   ubuntu    "/bin/bash"   43 seconds ago   Up 42 seconds             ansible_mast
 
 done -----------
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 Part 2 install Ansible and requies tools in ansible_master 
 Step 4 go to ansible_master container  update the ubuntu and install some dependencies and ansible
 
 docker exec -it ansible_master bash
 
-
+-------------
 apt update
 apt install python-is-python3 ansible vim iputils-ping openssh-client -y
         Geographical area 6 6city 44
 ansible --version
-
+--------------
 
 ansible 2.10.8
   config file = None
-
 
 ansible [core 2.14.2]
   config file = /etc/ansible/ansible.cfg
   
   
   extra steps 
+  -----------
   
   Optional If Python not installed or Ansible config file  = NONE
 
@@ -69,7 +69,7 @@ apt install ansible
 if any Error in installation then fix apt via        -     apt --fix-broken install
 
 done --- 
-
+-----------------------------------------------------------------------------------------------------------------------------------------
 Part 3 Setup n number of target machines (2)/ container(2)Login to Target and setup target 1 
 
 Step 5  Login to target 1 
